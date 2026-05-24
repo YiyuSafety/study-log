@@ -26,3 +26,22 @@ file_analyzer/
 ├── file_analyzer.py
 ├── test.txt
 └── README.md
+## 扩展练习：统计当前目录下的 txt 文件
+
+新增 `txt_counter.py`，用于统计当前脚本所在文件夹中的 `.txt` 文件数量。
+
+### 新增知识点
+
+- Path(__file__)
+- .parent
+- .iterdir()
+- .suffix
+- is_file()
+
+### 关键理解
+
+- `Path(".")` 表示当前终端所在目录
+- `Path(__file__)` 表示当前正在运行的 Python 文件
+- `Path(__file__).parent` 表示当前 Python 文件所在的文件夹
+- `.iterdir()` 可以遍历文件夹第一层内容
+- `.suffix` 可以获取文件后缀名
